@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         //            sample.frame.size.width = 200
         //            sample.center = self.view.center
         //            sample.transform = CGAffineTransform(scaleX: 300, y: 120)
-        //            sample.layer.cornerRadius = sample.frame.width
+        
                 } 
     }
 
