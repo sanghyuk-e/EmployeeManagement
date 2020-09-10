@@ -36,7 +36,6 @@ class ViewController: UIViewController {
                 
                 UIView.animate(withDuration: 1.0) {
                     sample.alpha = 1
-        //            sample.frame.size.width = 200
         
                 } 
     }
