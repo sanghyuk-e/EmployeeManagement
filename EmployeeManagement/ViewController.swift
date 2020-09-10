@@ -31,7 +31,6 @@ class ViewController: UIViewController {
         sample.layer.cornerRadius = sample.frame.height / 177
         sample.center = sampleView.center
         sample.center = CGPoint(x: sampleView.bounds.midX, y: sampleView.bounds.midY)
-        //        sample.layer.cornerRadius = sample.frame.height / 2
                 sampleView.addSubview(sample)
                 
                 UIView.animate(withDuration: 1.0) {
