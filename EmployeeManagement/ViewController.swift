@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         sampleView.addSubview(sample)
         UIView.animate(withDuration: 1.0) {
             sample.alpha = 1
-            } 
+        } 
     }
 
 
