@@ -35,6 +35,5 @@ class ViewController: UIViewController {
             sample.alpha = 1
         } 
     }
-
 }
 
