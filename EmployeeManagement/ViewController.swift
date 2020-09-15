@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         sample.layer.borderColor = UIColor.lightGray.cgColor
         sample.layer.borderWidth = 1
         sample.frame = CGRect(x: 0, y: 0, width: 70, height: 40)
-        sample.layer.cornerRadius = sample.frame.height / 177 
+        sample.layer.cornerRadius = sample.frame.height / 177
         sample.center = sampleView.center
         sample.center = CGPoint(x: sampleView.bounds.midX, y: sampleView.bounds.midY)
         //        sample.layer.cornerRadius = sample.frame.height / 2
