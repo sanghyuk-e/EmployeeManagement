@@ -10,45 +10,38 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var sampleView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         let sample = UIView()
-        sample.backgroundColor = .clear
+        sample.backgroundColor = .red
         sample.layer.borderColor = UIColor.lightGray.cgColor
         sample.layer.borderWidth = 1
-        sample.frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-        sample.center = view.center
-        sample.layer.cornerRadius = sample.frame.height / 2
-        self.view.addSubview(sample)
-        
-        UIView.animate(withDuration: 1.0) {
-            sample.alpha = 1
-            sample.frame.size.height = 100
-            sample.frame.size.width = self.view.frame.width + 10
-            sample.center = self.view.center
-            sample.layer.cornerRadius = sample.frame.width
-        }
-        
-//        UIView.animate(withDuration: 0.5, animations: {
-//           sample.alpha = 1
-//            sample.frame.size.height = 100
-//            sample.frame.size.width = 100
-//            sample.center = self.view.center
-//            sample.layer.cornerRadius = sample.frame.height / 2
-//        }) { finished in
-//            UIView.animate(withDuration: 0.5, animations: {
-//                sample.alpha = 0
-//                sample.frame.size.height = 0
-//                sample.frame.size.width = 0
-//                sample.center = self.view.center
-//                sample.layer.cornerRadius = sample.frame.height / 2
-//            })
-//        }
-        
-        
+        sample.frame = CGRect(x: 0, y: 0, width: 70, height: 40)
+        sample.layer.cornerRadius = sample.frame.height / 177
+        sample.center = sampleView.center
+        sample.center = CGPoint(x: sampleView.bounds.midX, y: sampleView.bounds.midY)
+        //        sample.layer.cornerRadius = sample.frame.height / 2
+                sampleView.addSubview(sample)
+                
+                UIView.animate(withDuration: 1.0) {
+                    sample.alpha = 1
+        //            sample.frame.size.height = 100
+        //            sample.frame.size.width = 200
+        //            sample.center = self.view.center
+        //            sample.transform = CGAffineTransform(scaleX: 300, y: 120)
+        //            sample.layer.cornerRadius = sample.frame.width
+                }
     }
 
 
