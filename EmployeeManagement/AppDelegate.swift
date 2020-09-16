@@ -11,24 +11,24 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // 메인 스토리보드 바꾸기
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window = UIWindow(frame: UIScreen.main.bounds)
                 
         // 스토리보드 인스턴스
-        let tutorialStoryboard = UIStoryboard(name: "Tutorial", bundle: nil)
+        let tutorialStoryboard = UIStoryboard(name: "Home", bundle: nil)
         // 뷰 컨트롤러 인스턴스
-        let viewController = tutorialStoryboard.instantiateViewControllerWithIdentifier("StoryboardTutorialID")
+        let viewController = tutorialStoryboard.instantiateViewController(withIdentifier: "HomeViewController")
                 
         // 윈도우의 루트 뷰 컨트롤러 설정
-        self.window?.rootViewController = viewController
+        window?.rootViewController = viewController
 
-          // 이제 화면에 보여주자.
-        self.window?.makeKeyAndVisible()
+        // 이제 화면에 보여주자.
+        window?.makeKeyAndVisible()
                 
         return true
     }

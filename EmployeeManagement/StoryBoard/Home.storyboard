@@ -12,22 +12,51 @@
         <!--Home View Controller-->
         <scene sceneID="Bb7-lf-coT">
             <objects>
-                <viewController id="hLy-da-7UC" customClass="HomeViewController" customModule="EmployeeManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="hLy-da-7UC" customClass="HomeViewController" customModule="EmployeeManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2j-Qr-1lO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K18-SK-dKt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8w-94-ser">
+                                        <rect key="frame" x="278" y="100" width="50" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="r8w-94-ser" firstAttribute="top" secondItem="K18-SK-dKt" secondAttribute="top" constant="100" id="9Hr-hf-eSn"/>
+                                    <constraint firstItem="r8w-94-ser" firstAttribute="leading" secondItem="K18-SK-dKt" secondAttribute="leading" constant="278" id="VQ7-V0-3Hk"/>
+                                    <constraint firstAttribute="bottom" secondItem="r8w-94-ser" secondAttribute="bottom" constant="652" id="aNm-Jt-vdJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="r8w-94-ser" secondAttribute="trailing" constant="16" id="lSL-th-j62"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iWV-EQ-FgL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r8w-94-ser" firstAttribute="width" secondItem="r2j-Qr-1lO" secondAttribute="width" multiplier="50:414" id="1E3-TM-na1"/>
+                            <constraint firstItem="r8w-94-ser" firstAttribute="height" secondItem="r2j-Qr-1lO" secondAttribute="height" multiplier="100:896" id="2ua-0R-ep1"/>
+                            <constraint firstItem="K18-SK-dKt" firstAttribute="centerX" secondItem="r2j-Qr-1lO" secondAttribute="centerX" id="3OP-nh-kkM"/>
+                            <constraint firstItem="K18-SK-dKt" firstAttribute="top" secondItem="iWV-EQ-FgL" secondAttribute="top" id="ZAY-ec-MPX"/>
+                            <constraint firstItem="K18-SK-dKt" firstAttribute="leading" secondItem="iWV-EQ-FgL" secondAttribute="leading" id="cVp-8u-Cbl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="K18-SK-dKt" secondAttribute="bottom" id="fDx-BT-Fam"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsQ-rc-Hgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="192"/>
+            <point key="canvasLocation" x="-133.33333333333334" y="179.46428571428569"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
