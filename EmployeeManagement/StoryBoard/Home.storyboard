@@ -122,27 +122,27 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-fl-oUh">
                                                 <rect key="frame" x="292" y="293" width="60" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="5bY-31-sXu"/>
                                                     <constraint firstAttribute="width" constant="60" id="Qb7-q2-BDX"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpO-LZ-aSf">
                                                 <rect key="frame" x="232" y="293" width="60" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="pxV-Vm-9r1"/>
                                                     <constraint firstAttribute="height" constant="30" id="vzD-mD-V28"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-QA-hhm">
                                                 <rect key="frame" x="172" y="293" width="60" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="fyL-FM-CJh"/>
                                                     <constraint firstAttribute="height" constant="30" id="xLe-wG-SQf"/>
                                                 </constraints>
-                                                <state key="normal" title="Button"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
