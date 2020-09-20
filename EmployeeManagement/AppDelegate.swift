@@ -17,18 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // 메인 스토리보드 바꾸기
-        window = UIWindow(frame: UIScreen.main.bounds)
-                
-        // 스토리보드 인스턴스
-        let tutorialStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        // 뷰 컨트롤러 인스턴스
-        let viewController = tutorialStoryboard.instantiateViewController(withIdentifier: "HomeViewController")
-                
-        // 윈도우의 루트 뷰 컨트롤러 설정
-        window?.rootViewController = viewController
-
-        // 이제 화면에 보여주자.
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        let storyboard = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(identifier: "HomeViewController")
+////        let navi = UINavigationController(rootViewController: storyboard)
+//        self.window?.rootViewController = storyboard
+//        self.window?.makeKeyAndVisible()
+        
+        if #available(iOS 13, *) {
+            print("set in SceneDelegate")
+        } else {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.rootViewController = HomeViewController()
+            self.window = window
+            window.makeKeyAndVisible()
+            
+        }
                 
         return true
     }
