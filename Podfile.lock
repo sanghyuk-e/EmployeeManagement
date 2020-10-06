@@ -1,0 +1,16 @@
+PODS:
+  - MultiToggleButton (1.8.2)
+
+DEPENDENCIES:
+  - MultiToggleButton
+
+SPEC REPOS:
+  trunk:
+    - MultiToggleButton
+
+SPEC CHECKSUMS:
+  MultiToggleButton: d02f5deaaa431b83f1f465e95a09e41fb3b40b51
+
+PODFILE CHECKSUM: cdb8137f478b9f7323068412c5b912ec47e13c01
+
+COCOAPODS: 1.9.3
