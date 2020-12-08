@@ -10,7 +10,8 @@ import UIKit
 import MultiToggleButton
 
 class HomeViewController: UIViewController {
-    
+
+    //MARK: - Outlet
     @IBOutlet weak var sampleButtom: MultiToggleButton!
 
     //MARK: - Life Cycle
@@ -36,7 +37,7 @@ class HomeViewController: UIViewController {
     ///
     /// - Authors: Jack
     /// - Date: 2020-10-06
-    /// - Requires: 버튼을 세팅하는 함수
+    /// - Requires: 버튼들을 세팅하는 함수
     /// - Important: 파이어베이스에서 마지막 저장 상태를 불러와야 한다.
     func setButtons() {
         

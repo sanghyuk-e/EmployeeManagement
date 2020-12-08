@@ -7,6 +7,7 @@ target 'EmployeeManagement' do
 
   # Pods for EmployeeManagement
 
+ pod 'Firebase/Analytics'
  pod 'MultiToggleButton'
 
 end
